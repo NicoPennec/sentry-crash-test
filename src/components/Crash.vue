@@ -8,9 +8,7 @@
         <label>Click to generate a</label><br>
         <button type="button" class="btn btn-primary" @click="generateError">Random Crash 💥</button>
       </p>
-      <p v-if="error">
-        <div class="alert" v-bind:class="'alert-' + error.type">{{ error.msg }}</div>
-      </p>
+      <p v-if="error" class="alert" v-bind:class="'alert-' + error.type">{{ error.msg }}</p>
     </section>
     <section class="panel panel-default">
       <h2 class="panel-heading">Dummy Form</h2>
