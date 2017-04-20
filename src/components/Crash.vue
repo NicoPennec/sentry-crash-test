@@ -59,7 +59,7 @@ export default {
   name: 'crash',
   data () {
     return {
-      title: 'Welcome the Sentry Crash Test',
+      title: 'Welcome to the Sentry Crash Test',
       nickname: 'BreizhCamp',
       secret: null,
       message: null,
