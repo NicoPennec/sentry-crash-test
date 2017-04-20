@@ -1,6 +1,12 @@
 # Sentry Crash Test 💥
 
+![sentry](http://pennec.io/sentry-crash-test/static/img/logo.63d6003.png)
+
 > A dummy project to generate event logs of crash for Sentry
+
+http://pennec.io/sentry-crash-test/
+
+
 
 ## Build Setup
 
