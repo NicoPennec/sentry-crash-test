@@ -1,6 +1,6 @@
-# vuejs2-test
+# Sentry Crash Test 💥
 
-> A Vue.js project
+> A dummy project to generate event logs of crash for Sentry
 
 ## Build Setup
 
