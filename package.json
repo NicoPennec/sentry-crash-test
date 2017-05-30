@@ -1,6 +1,6 @@
 {
   "name": "sentry-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "sentry client demo",
   "author": "Nicolas Pennec <nicolas.pennec@corp.ovh.com>",
   "private": true,
