@@ -20,7 +20,7 @@
           <label>Your secret code <input id="secret" :value="secret" type="password" class="form-control"></label>
         </p>
         <p>
-          <label>Your message <textarea id="message" :value="message" placeholder="Enter an awesome message" class="form-control"></textarea></label>
+          <label>Your message <textarea id="message" :value="message" class="form-control"></textarea></label>
         </p>
         <p>
           <input type="submit" class="btn btn-primary" value="Submit">
@@ -46,8 +46,6 @@
       <li><a href="https://sentry.io" target="_blank">Sentry.io</a></li>
       <li><a href="https://docs.sentry.io/" target="_blank">Sentry Docs</a></li>
       <li><a href="http://pennec.io" target="_blank">Pennec.io</a></li>
-      <br><br>
-      <li><a href="http://www.breizhcamp.org/" target="_blank">BreizhCamp.org</a></li>
     </ul>
   </div>
 </template>
@@ -60,7 +58,7 @@ export default {
   data () {
     return {
       title: 'Welcome to the Sentry Crash Test',
-      nickname: 'BreizhCamp',
+      nickname: null,
       secret: null,
       message: null,
       submit: false,
@@ -103,7 +101,7 @@ export default {
           break
         case 6:
           this.error.type = 'warning'
-          this.error.msg = 'Warning !!! it should never have happen'
+          this.error.msg = 'Warning !!! it should never have happened'
           console.warn(this.error.msg)
           Raven.captureMessage(this.error.msg, { level: 'warning' })
           break
@@ -186,4 +184,10 @@ hr {
   max-width: 500px;
   font-weight: bold;
 }
+
+.form-control {
+  width: 300px;
+  max-width: 100%;
+}
+
 </style>
